@@ -1,0 +1,64 @@
+.hidden{
+	display:none;
+}
+
+.unhidden{
+	display:block;
+}
+
+h1{
+	margin-left:540px;
+}
+
+body{
+	color:#007535;
+	background-color:Aquamarine;
+
+}
+
+#lightbox{
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	background-color:rgba(0, 0, 0, 0.7);
+}
+
+#positionBigImage{
+	position:absolute;
+	top:75px;
+	left:0px;
+	width:100%;
+}
+
+#boundaryBigImage{
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	width:517px;
+}
+
+#x{
+	position:absolute;
+	top:0px;
+	right:0px;
+
+}
+
+#main {
+	width:850px;
+	height:500px;
+	background-color:#026AC1;
+
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+
+	padding:20px;
+}
+
+.thumb {
+	height:200px;
+	padding:20px;
+}
