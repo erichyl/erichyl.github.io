@@ -119,7 +119,6 @@ function computerTakeTurn(){
 			
 		if(idName == ""){
 			do{
-				console.log("randomized");
 				let rand = parseInt(Math.random()*9) + 1;
 				idName = idNames[rand-1];
 				if(document.getElementById(idName).innerHTML == ""){
@@ -129,7 +128,6 @@ function computerTakeTurn(){
 		}
 
 		//change to O
-		console.log(idName);
 		document.getElementById(idName).innerHTML = currentPlayer;
 }
 
