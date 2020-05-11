@@ -42,18 +42,95 @@ function playerTakeTurn (e){
 function computerTakeTurn(){
 	
 	let idName = "";
-
+	var cb = []; // current board
+		 	cb[0] = "";
+		 	cb[1] = document.getElementById("one").innerHTML;
+		 	cb[2] = document.getElementById("two").innerHTML;
+		 	cb[3] = document.getElementById("three").innerHTML;
+		 	cb[4] = document. getElementById("four").innerHTML;
+		 	cb[5] = document.getElementById("five").innerHTML;
+		 	cb[6] = document.getElementById("six").innerHTML;
+		 	cb[7] = document.getElementById("seven").innerHTML;
+		 	cb[8] = document.getElementById("eight").innerHTML;
+		 	cb[9] = document.getElementById("nine").innerHTML;
 	//choose randome boxes until an empty box is found
-	do{
-		let rand = parseInt(Math.random()*9) + 1;
-		idName = idNames[rand-1];
+			
+			var x = 1;
+			var y = 2;
+			var z = 3;
+			for(var i = 0; i < 8; i++){
+				if(cb[x] == "" && cb[y] != "" && cb[y] == cb[z]){
+					idName = (x);
+				}else if(cb[y] == "" && cb[x] != "" && cb[x] == cb[z]){
+					idName = (y);
+				}else if(cb[z] == "" && cb[y] != "" && cb[y] == cb[x]){
+					idName = (z);
+				}
+				if(i == 0){
+					x = 4;
+					y = 5;
+					z = 6;
+				}else if(i == 1){
+					x = 7;
+					y = 8;
+					z = 9;
+				}else if(i == 2){
+					x = 1;
+					y = 4;
+					z = 7;
+				}else if(i == 3){
+					x = 2;
+					y = 5;
+					z = 8;
+				}else if(i == 4){
+					x = 3;
+					y = 6;
+					z = 9;
+				}else if(i == 5){
+					x = 1;
+					y = 5;
+					z = 9;
+				}else if(i == 6){
+					x = 3;
+					y = 5;
+					z = 7;
+				}
+			}
 
-		//check if chosen box is empty
-		if(document.getElementById(idName).innerHTML == ""){
-			document.getElementById(idName).innerHTML = currentPlayer;
-			break;
+			if(idName == 1){
+				idName = "one";
+			}else if(idName == 2){
+				idName = "two";
+			}else if(idName == 3){
+				idName = "three";
+			}else if(idName == 4){
+				idName = "four";
+			}else if(idName == 5){
+				idName = "five";
+			}else if(idName == 6){
+				idName = "six";
+			}else if(idName == 7){
+				idName = "seven";
+			}else if(idName == 8){
+				idName = "eight";
+			}else if(idName == 9){
+				idName = "nine";
+			}
+			
+		if(idName == ""){
+			do{
+				console.log("randomized");
+				let rand = parseInt(Math.random()*9) + 1;
+				idName = idNames[rand-1];
+				if(document.getElementById(idName).innerHTML == ""){
+					break;
+				}
+			}while(true);
 		}
-	}while(true);
+
+		//change to O
+		console.log(idName);
+		document.getElementById(idName).innerHTML = currentPlayer;
 }
 
 // after each turn check for a winner, a tie, or continue playing
