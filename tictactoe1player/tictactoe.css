@@ -1,0 +1,108 @@
+/*
+#FFA41B - Orange
+#000839 - Dark Blue
+#005082 - Navy Blue
+#00A8CC - Light Blue
+Colour Palette: https://colorhunt.co/palette/177867
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
+
+#controls{
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+}
+
+#newbutton {
+	position:absolute;
+	top:20px;
+	right:20px;
+	height:50px;
+	width:120px;
+	background-color:#FFA41B;
+	color:#000839;
+}
+
+.hidden{
+	display:none;
+}
+
+.unhidden{
+	display:block;
+}
+
+#lightbox{
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	background-color:rgba(0, 0, 0, 0.4);
+}
+
+#x{
+	position:absolute;
+	top:10px;
+	right:10px;
+	width:30px;
+	height:30px;
+	z-index:2;
+}
+
+#positionMessage{
+	position:absolute;
+	top:45px;
+	left:0px;
+	width:100%;
+}
+
+#boundaryMessage{
+	position:relative;
+	margin-left: auto;
+	margin-right: auto;
+	width:600px;
+	height:250px;
+	background-color: rgba(255, 255, 255, 0.9);
+	z-index:1;
+	padding:30px;
+	border:thick solid #005082;
+}
+
+.box{
+	height: 175px;
+	width: 175px;
+	background-color:#005082;
+	display:inline-block;
+	margin:10px;
+	vertical-align:top;
+	text-align:center;
+	line-height:175px;
+	font-size:100px;
+	color:#FFA41B;
+
+}
+.titleText{
+	text-align:center;
+	color:#FFA41B;
+	font-size:3em; 
+}
+h1.titleText {font-size:3em;}
+p.titleText {font-size:2em;}
+
+#main{
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+	height:585px;
+	width:595px;
+	background-color:#00A8CC;
+	padding:10px;
+}
+
+body{
+	background-color:#000839;
+	font-family: 'Coiny', Ariel, cursive;
+}
