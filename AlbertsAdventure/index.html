@@ -42,9 +42,29 @@
   		<div></div>
   		<div></div>
   	</div>
+    <img id="life1" class="unhidden" src="images/heart.png" alt="life">
+    <img id="life2" class="unhidden" src="images/heart.png" alt="life">
+    <img id="life3" class="unhidden" src="images/heart.png" alt="life">
 
     <div class="message" id="lose">You Lose</div>
     <div class="message" id="levelup">Next Level...</div>
+    <div class="message" id="win">You Win!</div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="unhidden"></div>
+
+    <div id="positionMessage">
+      <div id="boundaryMessage" class="unhidden">
+        <img id="x" class="unhidden" src="images/x.png" alt="close" onclick="continueGame()">
+
+        <h1 class="titleText" id="message">Welcome to Albert and Simon's Adventure!</h1>
+
+        <p class="titleText" id="message2">Albert is lost from it's rider Simon and need to find their way back without be captured by the enemies</p>
+        <button id="Yes" class="hidden" onclick="showLightBoxContinue()">Yes</button>
+        <button id="No" class="hidden" onclick="backToStart()">No</button>
+        <button id="Done" class="hidden" onclick="backToStart()">Done</button>
+      </div>
+    </div>
     <!-- include an external JavaScript file -->
     <script src="game.js"></script>
   </body>
