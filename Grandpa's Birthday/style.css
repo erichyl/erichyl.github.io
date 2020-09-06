@@ -1,0 +1,42 @@
+
+#title {
+	color:#67989d;
+	text-align: center;
+	font-size: 50px;
+}
+
+#cake {
+	text-align: center;
+	width: 335px;
+	height: 339px;
+}
+
+#arrow {
+	position: relative;
+	width: 200px;
+	height: 200px;
+}
+
+#message{
+	text-align: center;
+	position:fixed;
+	color:#67989d;
+	font-size: 40px;
+	width:100%;
+	vertical-align: text-top;
+	margin-top: 50px;
+}
+
+#photo{
+	text-align: center;
+	width: 700px;
+	height: 550px;
+}
+
+.hidden{
+	display:none;
+}
+
+.unhidden{
+	display:block;
+}
